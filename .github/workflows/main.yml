@@ -27,4 +27,4 @@ jobs:
         git config --global user.name "okanekudasai"
         git add src/main/resources/static/index.html
         git commit -m "Add index.html to static folder"
-        git push origin main
+        git push origin master
