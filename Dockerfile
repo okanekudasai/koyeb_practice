@@ -1,11 +1,11 @@
 # Build stage
 FROM eclipse-temurin:17-jdk-alpine AS builder
 
-WORKDIR /app
+WORKDIR /go
 RUN ls -al
 COPY . .
 RUN pwd
-RUN ls -al
+RUN ls -al /app
 
 RUN chmod +x gradlew && ./gradlew build
 
