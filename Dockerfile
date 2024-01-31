@@ -3,7 +3,7 @@ FROM eclipse-temurin:17-jdk-alpine AS builder
 
 WORKDIR /app
 COPY . .
-RUN sduo ./gradlew build
+RUN sudo ./gradlew build
 
 # Run stage
 FROM eclipse-temurin:17-jdk-alpine AS runner
