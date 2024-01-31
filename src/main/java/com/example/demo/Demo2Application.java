@@ -15,6 +15,13 @@ public class Demo2Application {
         return "Hello world@@@@@@!!!!!!!";
     }
 
+    @GetMapping("/ev")
+    String ev() {
+        System.out.println("fefefef");
+        return System.getenv("DATA");
+    }
+
+
     public static void main(String[] args) {
 
 
