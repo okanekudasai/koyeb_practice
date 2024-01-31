@@ -7,6 +7,7 @@ RUN echo "copy가 뭔데"
 RUN pwd
 RUN ls
 RUN chmod +x gradlew && ./gradlew build
+RUN ls
 
 #
 ## Run stage
