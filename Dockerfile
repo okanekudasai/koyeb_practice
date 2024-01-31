@@ -1,10 +1,9 @@
 # Build stage
 FROM eclipse-temurin:17-jdk-alpine AS builder
 
-RUN cat /application.yml
+CMD ["cat", "/application.yml"]
 WORKDIR /app
 COPY . .
-RUN cat /application.yml
 COPY /application.yml /app/src/main/resources/
 RUN chmod +x gradlew && ./gradlew build
 RUN ls /app/build/libs
