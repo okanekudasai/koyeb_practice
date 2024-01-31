@@ -2,7 +2,7 @@
 FROM eclipse-temurin:17-jdk-alpine AS builder
 
 WORKDIR /app
-RUN ls /app
+CMD ["ls"]
 #CMD ["cat", "/application.yml"]
 #WORKDIR /app
 #COPY . .
