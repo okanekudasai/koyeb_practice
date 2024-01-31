@@ -7,6 +7,7 @@ RUN pwd
 RUN ls -al ../
 RUN chmod +x gradlew && ./gradlew build
 
+
 #WORKDIR /app
 #COPY . .
 #COPY /application.yml /app/src/main/resources/
