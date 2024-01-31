@@ -2,7 +2,7 @@
 FROM eclipse-temurin:17-jdk-alpine AS builder
 
 WORKDIR /app
-RUN ls
+RUN ls /app
 #CMD ["cat", "/application.yml"]
 #WORKDIR /app
 #COPY . .
@@ -12,12 +12,12 @@ RUN ls
 
 
 # Run stage
-FROM eclipse-temurin:17-jdk-alpine AS runner
-
-RUN pwd
-WORKDIR /app
-RUN ls
-
-COPY --from=builder /app/build/libs/*.jar app.jar
-
-CMD ["java", "-jar", "app.jar"]
+#FROM eclipse-temurin:17-jdk-alpine AS runner
+#
+#RUN pwd
+#WORKDIR /app
+#RUN ls
+#
+#COPY --from=builder /app/build/libs/*.jar app.jar
+#
+#CMD ["java", "-jar", "app.jar"]
