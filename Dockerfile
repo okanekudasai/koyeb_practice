@@ -1,9 +1,8 @@
 # Build stage
 FROM eclipse-temurin:17-jdk-alpine AS builder
 
-WORKDIR /app
-CMD ["ls"]
-#CMD ["cat", "/application.yml"]
+WORKDIR /
+CMD ["cat", "/application.yml"]
 #WORKDIR /app
 #COPY . .
 #COPY /application.yml /app/src/main/resources/
