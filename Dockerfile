@@ -1,6 +1,7 @@
 # Build stage
 FROM eclipse-temurin:17-jdk-alpine AS builder
 
+RUN cat /application.yml
 WORKDIR /app
 COPY . .
 RUN cat /application.yml
