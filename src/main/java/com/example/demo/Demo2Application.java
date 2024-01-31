@@ -12,13 +12,7 @@ public class Demo2Application {
     @GetMapping("/test")
     String test() {
         System.out.println("testaaaa");
-        return "Hello world@@@@@@!!!!!!!";
-    }
-
-    @GetMapping("/ev")
-    String ev() {
-        System.out.println("fefefef");
-        return System.getenv("DATA");
+        return "Hello world#####!!!!!";
     }
 
 
