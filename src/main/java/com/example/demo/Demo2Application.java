@@ -11,8 +11,8 @@ public class Demo2Application {
 
     @GetMapping("/test")
     String test() {
-        System.out.println("test");
-        return "Hello world!!!!!!!";
+        System.out.println("testaaaa");
+        return "Hello world@@@@@@!!!!!!!";
     }
 
     public static void main(String[] args) {
