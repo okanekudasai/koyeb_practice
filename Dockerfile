@@ -3,7 +3,7 @@ FROM eclipse-temurin:17-jdk-alpine AS builder
 
 WORKDIR /app
 COPY . .
-CMD ["ls", "../"]
+COPY ../application.yml /app/src/main/resources/
 RUN chmod +x gradlew && ./gradlew build
 
 #WORKDIR /app
