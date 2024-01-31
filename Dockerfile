@@ -9,6 +9,7 @@ RUN chmod +x gradlew && ./gradlew build
 FROM eclipse-temurin:17-jdk-alpine AS runner
 
 WORKDIR /app
+RUN ls -al
 COPY --from=builder /app/target/*.jar app.jar
 
 CMD ["java", "-jar", "app.jar"]
